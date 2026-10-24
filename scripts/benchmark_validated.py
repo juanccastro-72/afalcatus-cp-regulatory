@@ -8,7 +8,7 @@ Where an exactly reported 5'UTR element has a reported TSS-relative position
 reported (psbD 74-nt leader, Nickelsen et al. 1994), the TSS is inferred and the
 scan's TATAATAT calls are evaluated for the expected -10 placement
 (first octamer base at TSS-15..TSS-5). Other classes are evaluated as
-detected / not detected by the uniform scan parameters (SD-like words, 3' window
+detected / not detected by the uniform scan parameters (SD-like sequences, 3' window
 MFE z-score and BH q, perfect-stem hairpin energy). The same element sequences
 and positional rules are then projected onto every other genome.
 """

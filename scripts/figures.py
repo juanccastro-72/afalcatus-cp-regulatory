@@ -132,7 +132,7 @@ def main():
         ax.bar(th(rr.last_base_1b), L, width=0.009, bottom=4.6 - L, color='#e34948' if rr.down_q_BH < .05 else '#bdbbb5', lw=0, align='center')
     ax.plot(np.linspace(0, 2*np.pi, 400), [4.6]*400, color=fs.GRID, lw=0.3)
     ax.text(0, 0, f'Ankistrodesmus falcatus\nUNAP_012026\nQB176266.1\n{n:,} bp', ha='center', va='center', fontsize=6.5, fontstyle='italic')
-    for r, tl in ((6.7, 'promoter words'), (5.95, 'PEP pairs'), (5.35, 'SD-like'), (4.1, "3′ structure")):
+    for r, tl in ((6.7, 'promoter motifs'), (5.95, 'PEP pairs'), (5.35, 'SD-like'), (4.1, "3′ structure")):
         ax.text(np.radians(-4), r, tl, fontsize=3.8, color=fs.MUTED, ha='right', va='center')
     for k in range(0, n, 20000):
         ax.text(th(k), 10.9, f'{k//1000} kb', fontsize=4, ha='center', va='center', color=fs.MUTED)
@@ -144,7 +144,7 @@ def main():
     h2 = [Line2D([], [], color='#111111', lw=1.3, label='TATAATAT (Chlamydomonas-type −10 octamer)'),
           Line2D([], [], color='#2a78d6', lw=1, label='TATAAT hexamer (upstream, non-coding)'),
           Line2D([], [], color='#eb6834', lw=1, label='PEP-like −35/−10 pair (≤1 mismatch, 16–18 nt)'),
-          Line2D([], [], color='#008300', lw=1, label='SD-like word (3–15 nt before start)'),
+          Line2D([], [], color='#008300', lw=1, label='SD-like sequence (3–15 nt before start)'),
           mpatches.Patch(color='#e34948', label="3′ window MFE z (bar length = −z), BH q < 0.05"),
           mpatches.Patch(color='#bdbbb5', label="3′ window MFE z, q ≥ 0.05")]
     lax.legend(handles=h2, loc='lower left', title='Regulatory-signal tracks (inner rings)', title_fontsize=6, fontsize=5.8)
@@ -281,7 +281,7 @@ def main():
     for i, ax in enumerate(axs):
         fs.panel(ax, 'abcd'[i], -0.3)
     fig.tight_layout(w_pad=0.8)
-    fs.save(fig, FM, 'Fig4_genome_level_motif_enrichment', manifest, 'Genome-level enrichment of promoter and SD-like words against dinucleotide-preserving nulls')
+    fs.save(fig, FM, 'Fig4_genome_level_motif_enrichment', manifest, 'Genome-level enrichment of promoter and SD-like sequences against dinucleotide-preserving nulls')
 
     # ---------------- Fig 5: RNA-structure signals ----------------
     BG = pd.read_csv(T/'distal_background_windows.tsv', sep='\t')
@@ -323,7 +323,7 @@ def main():
     msd, mdz = msd.reindex(keep), mdz.loc[keep]
     fig, axs = plt.subplots(1, 2, figsize=(fs.DOUBLE, fs.DOUBLE * 0.95), gridspec_kw=dict(wspace=0.05))
     names = [sp[g] for g in order]
-    for ax, M, cmap, vmin, vmax, title in ((axs[0], msd, 'Greens', 0, 1, 'SD-like word at 3–15 nt before start (presence)'),
+    for ax, M, cmap, vmin, vmax, title in ((axs[0], msd, 'Greens', 0, 1, 'SD-like sequence at 3–15 nt before start (presence)'),
                                            (axs[1], mdz, fs.DIV, -8, 8, "3′ flank MFE z-score")):
         im = ax.imshow(M.T.values, aspect='auto', cmap=cmap, vmin=vmin, vmax=vmax, interpolation='nearest')
         ax.set_xticks(range(len(keep))); ax.set_xticklabels(keep, rotation=90, fontsize=4.3, fontstyle='italic')
@@ -332,7 +332,7 @@ def main():
             cb = fig.colorbar(im, ax=ax, orientation='horizontal', fraction=0.025, pad=0.07); cb.ax.tick_params(labelsize=5)
             cb.set_label('MFE z-score (negative = more structured than shuffles)', fontsize=5)
         else:
-            ax.legend(handles=[mpatches.Patch(color=plt.get_cmap('Greens')(1.0), label='SD-like word present'),
+            ax.legend(handles=[mpatches.Patch(color=plt.get_cmap('Greens')(1.0), label='SD-like sequence present'),
                                mpatches.Patch(color=plt.get_cmap('Greens')(0.0), label='absent'),
                                mpatches.Patch(facecolor='white', edgecolor=fs.GRID, label='gene absent / not CDS')],
                       loc='upper center', bbox_to_anchor=(0.5, -0.07), ncol=3, fontsize=5)
@@ -347,7 +347,7 @@ def main():
         ax.set_xticks(np.arange(-.5, len(keep)), minor=True); ax.set_yticks(np.arange(-.5, len(order)), minor=True)
         ax.grid(which='minor', color='white', lw=0.25); ax.tick_params(which='minor', length=0)
     fs.panel(axs[0], 'a', -0.32, 1.01); fs.panel(axs[1], 'b', -0.05, 1.03)
-    fs.save(fig, FM, 'Fig6_gene_by_genome_conservation', manifest, 'Gene-by-genome conservation of SD-like words and 3′-flank structure, genomes in phylogenetic order')
+    fs.save(fig, FM, 'Fig6_gene_by_genome_conservation', manifest, 'Gene-by-genome conservation of SD-like sequences and 3′-flank structure, genomes in phylogenetic order')
 
     pd.DataFrame(manifest).to_csv((Path(fs.FIG_DIR) if fs.FIG_DIR else P/'figures')/'figure_manifest_main.tsv', sep='\t', index=False)
 

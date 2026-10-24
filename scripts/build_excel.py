@@ -86,7 +86,7 @@ def main():
         'Integrated_candidates': (rd('Afalcatus_integrated_candidates.tsv').drop(columns=['upstream300', 'down120'], errors='ignore'),
                                   'A. falcatus boundary contexts with all evidence, conservation and part scores (hypotheses)'),
         'Boundary_contexts': (A[A.genome == F], 'All A. falcatus CDS/rRNA boundary contexts with sequences and metrics'),
-        'Motif_hits': (H[H.genome == F], 'All promoter-word, PEP-pair and SD-like hits with exact coordinates'),
+        'Motif_hits': (H[H.genome == F], 'All promoter-motif, PEP-pair and SD-like hits with exact coordinates'),
         'Hairpins_all': (HP[HP.genome == F], 'All enumerated perfect-stem 3′ hairpins (ΔG ≤ −2 kcal/mol)'),
         'Footprint_sites_Af': (rd('footprint_sites.tsv.gz').query('genome == @F'), 'A. falcatus sites of conserved MEME footprints'),
         'Kmer8_Afalcatus': (rd('kmer8_Afalcatus_top.tsv'), 'Top enriched 8-mers in A. falcatus proximal upstream DNA'),

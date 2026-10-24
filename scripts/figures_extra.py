@@ -91,7 +91,7 @@ def main():
     # ---------------- Fig 8: A. falcatus candidate parts ----------------
     C = pd.read_csv(T/'Afalcatus_integrated_candidates.tsv', sep='\t')
     C = C.drop_duplicates('gene')
-    comp_p = {'nc ≥150 nt': C.upstream_noncoding_len >= 150, 'promoter word': (C.n_TATAATAT + C.n_TATAAT + C.n_PEP_pairs) > 0,
+    comp_p = {'nc ≥150 nt': C.upstream_noncoding_len >= 150, 'promoter motif': (C.n_TATAATAT + C.n_TATAAT + C.n_PEP_pairs) > 0,
               'SD-like': C.SD_like.astype(bool), 'SD conserved ≥50%': C.SD_cons_Sphaeropleales.fillna(0) >= .5,
               'start z ≥ 0': C.start_region_z.fillna(-9) >= 0, 'Cr part validated': C.validated_Cr_ortholog_part.fillna('') != ''}
     comp_t = {"3′ q<0.05": C.down_q_BH < .05, 'stem ΔG ≤ −10': C.best_hairpin_energy.fillna(0) <= -10,
@@ -198,7 +198,7 @@ def main():
         if m == 'TATAATAT':
             ax.set_yscale('symlog', linthresh=1); ax.set_ylim(-0.2, 40); ax.set_yticks([0, 1, 10]); ax.set_yticklabels(['0', '1', '10'])
     fig.tight_layout()
-    fs.save(fig, FS, 'FigS3_promoter_window_sensitivity', sman, 'Sensitivity of genome-level promoter-word enrichment to window length and coding masking')
+    fs.save(fig, FS, 'FigS3_promoter_window_sensitivity', sman, 'Sensitivity of genome-level promoter-motif enrichment to window length and coding masking')
     # S4 octamer positional profiles small multiples
     PR = pd.read_csv(T/'octamer_positional_profiles.tsv', sep='\t')
     fig, axs = plt.subplots(7, 6, figsize=(fs.DOUBLE, fs.DOUBLE * 1.05), sharex=True)
