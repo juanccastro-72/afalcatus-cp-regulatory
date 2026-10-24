@@ -1,3 +1,4 @@
+[README.md](https://github.com/user-attachments/files/33908609/README.md)
 # afalcatus-cp-regulatory
 
 [![regression-tests](https://github.com/juanccastro-72/afalcatus-cp-regulatory/actions/workflows/tests.yml/badge.svg)](https://github.com/juanccastro-72/afalcatus-cp-regulatory/actions/workflows/tests.yml)
@@ -61,7 +62,7 @@ The regression tests (`scripts/test_inventory.py`, `scripts/test_comparative.py`
 
 Please cite the article and the archived software release (see `CITATION.cff`; the Zenodo DOI is added at the first release):
 
-Diaz Sol Sol KF, Cobos Ruiz M, Acosta Conchucos O, Castro Gómez JC (2026) Computational characterization of transcriptional and translational regulatory elements in the *Ankistrodesmus falcatus* plastome reveals a lineage-specific promoter signature, relevant to chloroplast engineering. Plant Molecular Biology (submitted).
+Castro JC, Castro CG, Diaz KF, Acosta O, Cobos M (2026) Computational characterization of transcriptional and translational regulatory elements in the *Ankistrodesmus falcatus* plastome reveals a lineage-specific promoter signature, relevant to chloroplast engineering. Plant Molecular Biology (submitted).
 
 ## Licence
 
@@ -69,4 +70,4 @@ MIT (see `LICENSE`). External programs called by the workflow (ViennaRNA, MEME S
 
 ## Contact
 
-Juan Carlos Castro Gómez, BIOTECMEB, Universidad Nacional de la Amazonía Peruana, Iquitos, Peru (juan.castro@unapiquitos.edu.pe)
+Juan C. Castro, Natural Resources Research Center (CIRNA), Universidad Nacional de la Amazonía Peruana (UNAP), Iquitos, Peru (juan.castro@unapiquitos.edu.pe); Marianela Cobos (marianela.cobos@unapiquitos.edu.pe)
