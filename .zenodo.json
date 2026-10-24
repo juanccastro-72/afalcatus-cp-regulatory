@@ -1,0 +1,47 @@
+{
+  "title": "afalcatus-cp-regulatory: reproducible in silico identification of chloroplast regulatory elements in microalgal plastomes",
+  "upload_type": "software",
+  "description": "<p>Knowledge-based, statistically controlled workflow (v3) to identify promoter, Shine-Dalgarno-like, start-region and 3′-end regulatory signals in chloroplast genomes, calibrated against experimentally validated <i>Chlamydomonas reinhardtii</i> elements and applied to <i>Ankistrodesmus falcatus</i> UNAP_012026 (GenBank QB176266.1) and 40 green-algal plastomes. Includes the run script, conda environment, regression tests, input data and manuscript tools. Code accompanying the article submitted to <i>Plant Molecular Biology</i>.</p>",
+  "creators": [
+    {
+      "name": "Castro Gómez, Juan Carlos",
+      "affiliation": "Universidad Nacional de la Amazonía Peruana (UNAP), BIOTECMEB",
+      "orcid": "0000-0003-0794-3178"
+    },
+    {
+      "name": "Diaz Sol Sol, Katia Fiorella",
+      "affiliation": "Universidad Nacional de la Amazonía Peruana (UNAP)"
+    },
+    {
+      "name": "Cobos Ruiz, Marianela",
+      "affiliation": "Universidad Nacional de la Amazonía Peruana (UNAP)"
+    },
+    {
+      "name": "Acosta Conchucos, Oscar",
+      "affiliation": "Universidad Nacional Mayor de San Marcos"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "chloroplast",
+    "plastome",
+    "regulatory elements",
+    "promoter",
+    "Shine-Dalgarno",
+    "RNA structure",
+    "phylogenetic footprinting",
+    "microalgae",
+    "Ankistrodesmus falcatus",
+    "Selenastraceae"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "QB176266.1",
+      "relation": "references",
+      "scheme": "other",
+      "resource_type": "dataset"
+    }
+  ],
+  "notes": "Funding: PROCIENCIA project PE501088786-2024 [confirm funding statement]."
+}

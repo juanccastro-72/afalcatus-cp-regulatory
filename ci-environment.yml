@@ -1,0 +1,14 @@
+# Minimal environment used by GitHub Actions to run the regression tests
+name: cpreg-ci
+channels: [conda-forge, bioconda]
+dependencies:
+  - python=3.13
+  - biopython
+  - viennarna
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - xlsxwriter
+  - openpyxl
+  - pillow

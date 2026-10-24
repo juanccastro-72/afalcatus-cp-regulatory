@@ -1,0 +1,12 @@
+# Python 3.13.x tested
+biopython==1.88
+ViennaRNA==2.7.2
+numpy
+pandas
+scipy
+matplotlib
+logomaker==0.8.7
+xlsxwriter
+openpyxl
+# External (bioconda): mafft 7, trimal 1.5, iqtree 2/3, meme 5.5, blast 2.16, aragorn 1.2
+pypdf>=5

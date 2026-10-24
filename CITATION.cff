@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article (preferred-citation) and the archived software release."
+title: "afalcatus-cp-regulatory: reproducible in silico identification of chloroplast regulatory elements in microalgal plastomes"
+version: 1.0.0
+license: MIT
+repository-code: "https://github.com/juanccastro-72/afalcatus-cp-regulatory"
+keywords: [chloroplast, plastome, regulatory elements, promoter, Shine-Dalgarno, RNA structure, phylogenetic footprinting, microalgae, Ankistrodesmus falcatus, Chlamydomonas reinhardtii]
+authors:
+  - family-names: "Castro Gómez"
+    given-names: "Juan Carlos"
+    affiliation: "Universidad Nacional de la Amazonía Peruana (UNAP), BIOTECMEB, Iquitos, Peru"
+    email: "juan.castro@unapiquitos.edu.pe"
+    orcid: "https://orcid.org/0000-0003-0794-3178"
+  - family-names: "Diaz Sol Sol"
+    given-names: "Katia Fiorella"
+    affiliation: "Universidad Nacional de la Amazonía Peruana (UNAP), Iquitos, Peru"
+  - family-names: "Cobos Ruiz"
+    given-names: "Marianela"
+    affiliation: "Universidad Nacional de la Amazonía Peruana (UNAP), Iquitos, Peru"
+  - family-names: "Acosta Conchucos"
+    given-names: "Oscar"
+    affiliation: "Universidad Nacional Mayor de San Marcos, Lima, Peru"
+preferred-citation:
+  type: article
+  title: "Computational characterization of transcriptional and translational regulatory elements in the Ankistrodesmus falcatus plastome reveals a lineage-specific promoter signature, relevant to chloroplast engineering"
+  journal: "Plant Molecular Biology"
+  year: 2026
+  status: submitted
+  authors:
+    - family-names: "Diaz Sol Sol"
+      given-names: "Katia Fiorella"
+    - family-names: "Cobos Ruiz"
+      given-names: "Marianela"
+    - family-names: "Acosta Conchucos"
+      given-names: "Oscar"
+    - family-names: "Castro Gómez"
+      given-names: "Juan Carlos"

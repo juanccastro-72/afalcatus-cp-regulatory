@@ -1,0 +1,43 @@
+species	family	order_clade	tableS1_accession	insdc_accession	role
+Ankistrodesmus falcatus	Selenastraceae	Sphaeropleales	QB176266.1	QB176266.1	focal
+Bracteacoccus aerius	Bracteacoccaceae	Sphaeropleales	NC_029675.1	KT199254	TableS1
+Bracteacoccus giganteus	Bracteacoccaceae	Sphaeropleales	NC_028586.1	KT625421	TableS1
+Bracteacoccus minor	Bracteacoccaceae	Sphaeropleales	NC_029674.1	KT199253	TableS1
+Stigeoclonium helveticum	Chaetophoraceae	Chaetophorales	NC_008372.1	DQ630521	TableS1
+Chromochloris zofingiensis	Chromochloridaceae	Sphaeropleales	NC_029672.1	KT199251	TableS1
+Hydrodictyon reticulatum	Hydrodictyaceae	Sphaeropleales	NC_034655.1	KY114065	TableS1
+Lacunastrum gracillimum	Hydrodictyaceae	Sphaeropleales	NC_037918.1	MF276976	TableS1
+Pediastrum angulosum	Hydrodictyaceae	Sphaeropleales	NC_037919.1	MF276977	TableS1
+Pediastrum duplex	Hydrodictyaceae	Sphaeropleales	NC_034654.1	KY114064	TableS1
+Pseudopediastrum boryanum	Hydrodictyaceae	Sphaeropleales	NC_037920.1	MF276982	TableS1
+Pseudopediastrum integrum	Hydrodictyaceae	Sphaeropleales	NC_037921.1	MF276984	TableS1
+Pseudopediastrum sp. CL0201VA	Hydrodictyaceae	Sphaeropleales	NC_037922.1	MF276985	TableS1
+Stauridium tetras	Hydrodictyaceae	Sphaeropleales	NC_037923.1	MF276986	TableS1
+Mychonastes homosphaera	Mychonastaceae	Sphaeropleales	NC_029671.1	KT199249	TableS1
+Mychonastes jurisii	Mychonastaceae	Sphaeropleales	NC_028579.1	KT625411	TableS1
+Chlorotetraedron incus	Neochloridaceae	Sphaeropleales	NC_029673.1	KT199252	TableS1
+Neochloris aquatica	Neochloridaceae	Sphaeropleales	NC_029670.1	KT199248	TableS1
+Pseudomuriella schumacherensis	Pseudomuriellaceae	Sphaeropleales	NC_029669.1	KT199256	TableS1
+Neocystis brevis	Radiococcaceae	Sphaeropleales	NC_025535.1	KM462873	TableS1
+Coelastrella saipanensis	Scenedesmaceae	Sphaeropleales	NC_042181.1	MF423120	TableS1
+Coelastrella sp. MACC-549	Scenedesmaceae	Sphaeropleales	CM031383.1	CM031383	TableS1
+Coelastrum microporum	Scenedesmaceae	Sphaeropleales	ON619891.1	ON619891	TableS1
+Desmodesmus abundans	Scenedesmaceae	Sphaeropleales	OP124049.1	OP124049	TableS1
+Desmodesmus spinosus	Scenedesmaceae	Sphaeropleales	PV295633.1	PV295633	TableS1
+Pectinodesmus pectinatus	Scenedesmaceae	Sphaeropleales	NC_036668.1	KU847995	TableS1
+Scenedesmaceae sp. YH-2023b	Scenedesmaceae	Sphaeropleales	OR350844.1	OR350844	TableS1
+Tetradesmus obliquus UTEX393	Scenedesmaceae	Sphaeropleales	NC_008101.1	DQ396875	TableS1
+Tetradesmus obliquus DOE152z	Scenedesmaceae	Sphaeropleales	CM007919.1	CM007919	TableS1_strain
+Tetradesmus obliquus KX756229	Scenedesmaceae	Sphaeropleales	KX756229.1	KX756229	TableS1_strain
+Tetradesmus reginae	Scenedesmaceae	Sphaeropleales	NC_086752.1	OR502664	TableS1
+Kirchneriella aperta	Selenastraceae	Sphaeropleales	NC_029676.1	KT199250	TableS1
+Monoraphidium dybowskii	Selenastraceae	Sphaeropleales	OM329943.1	OM329943	TableS1
+Monoraphidium neglectum	Selenastraceae	Sphaeropleales	NW_014013626.1	CM002678	TableS1
+Ankyra judayi	Sphaeropleaceae	Sphaeropleales	NC_029735.1	KT199255	TableS1
+Parallela transversalis	Sphaeropleaceae	Sphaeropleales	NC_042241.1	MG786420	TableS1
+Chlamydomonas reinhardtii	Chlamydomonadaceae	Chlamydomonadales	NC_005353 (RefSeq of BK000554)	FJ423446	reference_model
+Dunaliella salina	Dunaliellaceae	Chlamydomonadales	NC_016732	GQ250046	reference_model
+Gonium pectorale	Volvocaceae	Chlamydomonadales	NC_020438	AP012494	reference_model
+Oedogonium cardiacum	Oedogoniaceae	Oedogoniales	NC_011031	EU677193	reference_outgroup
+Schizomeris leibleinii	Schizomeridaceae	Chaetophorales	NC_015645	HQ700713	reference_outgroup
+Chlorella vulgaris	Chlorellaceae	Chlorellales (Trebouxiophyceae)	NC_001865	AB001684	reference_outgroup

@@ -1,0 +1,23 @@
+name: cpreg
+channels: [conda-forge, bioconda]
+dependencies:
+  - python=3.13
+  - biopython=1.88
+  - viennarna=2.7.2
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - xlsxwriter
+  - openpyxl
+  - pillow
+  - mafft=7.526
+  - trimal=1.5
+  - iqtree=3.1.4
+  - meme=5.5.9
+  - blast=2.17
+  - aragorn=1.2.41
+  - pip
+  - pip:
+      - logomaker==0.8.7
+      - pypdf>=5

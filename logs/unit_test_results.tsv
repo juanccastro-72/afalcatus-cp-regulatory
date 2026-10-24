@@ -1,0 +1,21 @@
+test	status	details
+test_actual_genome_product_contexts (__main__.InventoryTests.test_actual_genome_product_contexts)	SKIP	Supplied genome not present
+test_bh_known_values (__main__.InventoryTests.test_bh_known_values)	PASS	
+test_circular_minus_window (__main__.InventoryTests.test_circular_minus_window)	PASS	
+test_circular_plus_window (__main__.InventoryTests.test_circular_plus_window)	PASS	
+test_empty_annotation_safe (__main__.InventoryTests.test_empty_annotation_safe)	PASS	
+test_linear_clips_not_wraps (__main__.InventoryTests.test_linear_clips_not_wraps)	PASS	
+test_minus_cis_spliced_boundaries (__main__.InventoryTests.test_minus_cis_spliced_boundaries)	PASS	
+test_mixed_strand_exon_contexts (__main__.InventoryTests.test_mixed_strand_exon_contexts)	PASS	
+test_origin_neighborhood_and_minus_order (__main__.InventoryTests.test_origin_neighborhood_and_minus_order)	PASS	
+test_overlapping_motif_matches (__main__.InventoryTests.test_overlapping_motif_matches)	PASS	
+test_parallel_complement_is_not_stem (__main__.InventoryTests.test_parallel_complement_is_not_stem)	PASS	
+test_reverse_complement (__main__.InventoryTests.test_reverse_complement)	PASS	
+test_sd_spacing_after_motif (__main__.InventoryTests.test_sd_spacing_after_motif)	PASS	
+test_sd_too_close_rejected (__main__.InventoryTests.test_sd_too_close_rejected)	PASS	
+test_shuffle_preserves_dinucleotides_and_ends (__main__.InventoryTests.test_shuffle_preserves_dinucleotides_and_ends)	PASS	
+test_spaced_promoter_pair (__main__.InventoryTests.test_spaced_promoter_pair)	PASS	
+test_true_antiparallel_stem (__main__.InventoryTests.test_true_antiparallel_stem)	PASS	
+test_wrapped_coordinate_segments (__main__.InventoryTests.test_wrapped_coordinate_segments)	PASS	
+test_wrong_spacer_rejected (__main__.InventoryTests.test_wrong_spacer_rejected)	PASS	
+test_zero_hit_categories_have_schemas (__main__.InventoryTests.test_zero_hit_categories_have_schemas)	PASS	
