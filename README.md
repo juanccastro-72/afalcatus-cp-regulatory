@@ -48,9 +48,9 @@ External tools are found through the `CPREG_BIN` environment variable. If it is 
 
 ## Method summary
 
-The workflow is knowledge-based and statistically controlled. It uses no machine-learning classifier.
+The workflow is knowledge-based and statistically controlled.
 
-- **Scans.** Promoter words, SD-like words, start-region folding and 3′-flank folding (ViennaRNA 2.7.2, Turner 2004 parameters, 25 °C).
+- **Scans.** Promoter motifs, SD-like sequences, start-region folding and 3′-flank folding (ViennaRNA 2.7.2, Turner 2004 parameters, 25 °C).
 - **Statistics.** Each window is compared with dinucleotide-preserving shuffles of itself; P values are BH-corrected and observed/expected ratios are computed per genome.
 - **Comparative layer.** Phylogenetic footprinting (MEME/TOMTOM) and a phylogeny from 64 concatenated plastid proteins (IQ-TREE).
 
