@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 <!-- After the first Zenodo release, add its DOI badge here: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX) -->
 
-Reproducible in silico identification of chloroplast regulatory elements in microalgal plastomes (v3 workflow; Supplementary Material 5 of the article).
+Reproducible in silico identification of chloroplast regulatory elements in microalgal plastomes (workflow; Supplementary Material 5 of the article).
 
 This is the code for the article "Computational characterization of transcriptional and translational regulatory elements in the *Ankistrodesmus falcatus* plastome reveals a lineage-specific promoter signature, relevant to chloroplast engineering" (*Plant Molecular Biology*). It reproduces every table and figure from public sequence data with a fixed random seed (20261023). The workflow is summarised in Fig. S10.
 
