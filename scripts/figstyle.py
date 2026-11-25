@@ -11,7 +11,7 @@ plt.rcParams.update({
     'font.size': 7, 'axes.titlesize': 8, 'axes.labelsize': 7, 'xtick.labelsize': 6.5, 'ytick.labelsize': 6.5,
     'legend.fontsize': 6.5, 'axes.linewidth': 0.6, 'xtick.major.width': 0.6, 'ytick.major.width': 0.6,
     'xtick.major.size': 2.5, 'ytick.major.size': 2.5, 'axes.spines.top': False, 'axes.spines.right': False,
-    'svg.fonttype': 'path', 'pdf.fonttype': 42, 'savefig.dpi': 600, 'figure.dpi': 150,
+    'svg.fonttype': 'none', 'pdf.fonttype': 42, 'savefig.dpi': 600, 'figure.dpi': 150,
     'axes.titleweight': 'bold', 'axes.titlelocation': 'left', 'legend.frameon': False,
 })
 

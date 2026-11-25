@@ -110,12 +110,17 @@ def main():
         (A.drop(columns=['upstream300', 'down120', 'down_MFE_structure'], errors='ignore'), 'Boundary contexts of all 41 plastomes'),
         (H, 'Motif hits in all 41 plastomes'),
         (HP, 'Best 3′ hairpin per context (all hairpins for the focal and benchmark plastomes)'),
+        (rd('octamer_ancestral_states.tsv'), 'Fitch-parsimony ancestral states of the TATAATAT −10 octamer signature (tip coding and reconstruction)'),
+        (rd('antiSD_16S_3prime_improved.tsv'), '16S rRNA 3′ anti-SD (CCUCC) inventory with homology-based reannotation of the 16S 3′ terminus: detection method, 3′-end homology identity and recovered sequence across the 41 plastomes (Fig. S11)'),
+        (rd('rnaseq_mapping_summary.tsv'), 'Per-dataset plastome mapping statistics for the six RNA-seq runs used for transcriptional support (Fig. 10)'),
+        (rd('SD_summary_by_genome_improved.tsv'), 'Per-genome SD-like element counts under three detection methods (strict exact GGAG, expanded cores, thermodynamic anti-SD:mRNA duplex) (Fig. S11)'),
+        (rd('SD_per_gene_improved.tsv'), 'Per-CDS SD-like element calls under the three detection methods, with duplex ΔG and spacing to the start codon'),
     ]
     n = 1; books = []
     for label, desc, fname, lst in (
             ('Supplementary Material 2', 'Tables S1–S20. Comparative results for 41 green-algal plastomes', 'Supplementary_Material_2_Tables_S1-S20.xlsx', sm2),
             ('Supplementary Material 3', 'Tables S21–S26. Ankistrodesmus falcatus UNAP_012026 (QB176266.1) regulatory inventory', 'Supplementary_Material_3_Tables_S21-S26.xlsx', sm3),
-            ('Supplementary Material 4', 'Tables S27–S29. Per-context results for all plastomes', 'Supplementary_Material_4_Tables_S27-S29.xlsx', sm4)):
+            ('Supplementary Material 4', 'Tables S27–S34. Per-context results, octamer ancestral states, 16S anti-SD (reannotated), RNA-seq mapping and improved SD detection', 'Supplementary_Material_4_Tables_S27-S34.xlsx', sm4)):
         tabs = {}
         for df, cap in lst:
             tabs[f'Table S{n}'] = (df, cap); n += 1

@@ -35,6 +35,7 @@ CAP = {
  7: 'Concordance of per-gene 3′-flank MFE z-scores and start-region z-scores between two independent <i>Tetradesmus obliquus</i> plastome assemblies',
  8: 'The 30 most consistently enriched 8-mers in proximal (−100 to −1) non-coding upstream DNA across genomes',
  9: 'Information-content logos of all 28 positionally fixed 5′-leader footprints (gene, median position, genomes with a site/genomes analysed and MEME <i>E</i> value)',
+ 11: 'Improved detection of the 16S rRNA 3′ anti-SD and of SD-like elements. <b>a</b> Anti-SD recovery: homology-based reannotation of the 16S 3′ terminus raises detection from 22/41 (annotated tail only) to 28/41 (annotated + reannotated). <b>b</b> 16S 3′ homology identity separates present (0.77–1.00) from absent (0.53–0.67) plastomes with a clean gap at 0.73; the 13 non-recovered genomes lack the conserved 3′ terminus in the deposited sequence (assembly-limited, scattered across lineages). <b>c</b> Information-content logo of the recovered 16S 3′ anti-SD region aligned on the CCUCC core (n = 26 plastomes). <b>d</b> SD-like elements detected across 3,288 CDS by three methods: strict exact GGAG (251; 7.6%), expanded cores (443; 13.5%) and a thermodynamic anti-SD:mRNA duplex (ΔG ≤ −4 kcal mol⁻¹; 338; 10.3%). <b>e</b> Per-genome percentage of CDS with an SD-like element under each method. The strict exact-word scan undercounts SD-like elements by 40–75%',
  10: 'Framework of the reproducible workflow (v3) for identifying chloroplast regulatory elements. Steps 1–8 show the inputs, genome preparation, boundary contexts, the four uniform signal scans, null models and statistics, the comparative layer, validation against experimentally characterised elements, and integration into ranked candidate parts; the scripts responsible for each step are given in each box (Supplementary Material 5). The workflow is knowledge-based and statistically controlled and does not train a machine-learning classifier such as a convolutional neural network',
 }
 st = dict(
@@ -48,20 +49,20 @@ def header(c, d):
     c.drawString(18 * mm, A4[1] - 12 * mm, 'Plant Molecular Biology — Supplementary Material 1')
     c.drawRightString(A4[0] - 18 * mm, 12 * mm, str(d.page)); c.restoreState()
 doc = SimpleDocTemplate(str(OUT), pagesize=A4, leftMargin=18 * mm, rightMargin=18 * mm, topMargin=18 * mm, bottomMargin=18 * mm,
-                        title='Supplementary Material 1', author='Diaz Sol Sol KF, Cobos Ruiz M, Acosta Conchucos O, Castro Gómez JC')
+                        title='Supplementary Material 1', author='Castro JC, Castro CG, Diaz KF, Acosta O, Grandez MA, Cobos M')
 s = [Paragraph('<b>Supplementary Material 1</b>', st['h']),
      Paragraph(TITLE, st['t']),
-     Paragraph('Katia Fiorella Diaz Sol Sol, Marianela Cobos Ruiz, Oscar Acosta Conchucos, Juan Carlos Castro Gómez* [author list to be confirmed]', st['n']),
+     Paragraph('Juan C. Castro, Carlos G. Castro, Katia F. Diaz, Oscar Acosta, Miguel A. Grandez, Marianela Cobos*', st['n']),
      Paragraph('*Corresponding author: juan.castro@unapiquitos.edu.pe; Universidad Nacional de la Amazonía Peruana, Iquitos, Peru', st['n']),
      Paragraph('<i>Plant Molecular Biology</i>', st['n']), Spacer(1, 6 * mm),
      Paragraph('<b>Contents</b>', st['n'])]
-SHORT = {1: 'Plastome architecture', 2: 'Gene content', 3: 'Sensitivity of promoter-motif enrichment',
+SHORT = {11: 'Improved SD / anti-SD detection', 1: 'Plastome architecture', 2: 'Gene content', 3: 'Sensitivity of promoter-motif enrichment',
          4: 'TATAATAT positional profiles per genome', 5: '<i>A. falcatus</i> 3′-flank structures',
          6: 'Conservation of co-oriented gene pairs', 7: 'Concordance between <i>T. obliquus</i> assemblies',
          8: 'Cross-genome 8-mer enrichment', 9: 'Logos of all 5′-leader footprints', 10: 'Workflow framework'}
-for k in range(1, 11):
+for k in list(range(1, 11))+[11]:
     s.append(Paragraph(f'<b>Fig. S{k}</b> ' + SHORT[k], st['n']))
-for k in range(1, 11):
+for k in list(range(1, 11))+[11]:
     s.append(PageBreak())
     im = PI.open(FIG / f'FigS{k}.jpg'); w, h = im.size; dpi = im.info.get('dpi', (600, 600))[0]
     pw, ph = w / dpi * 25.4 * mm, h / dpi * 25.4 * mm

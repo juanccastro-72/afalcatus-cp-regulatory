@@ -1,0 +1,7 @@
+run_accession	experiment	source	scientific_name	reads_analysed	reads_mapped_to_plastome	percent_mapped
+SRR11729897	SRX8289087	independent	Ankistrodesmus falcatus	1811191	5653	0.312
+SRR11742231	SRX8295666	this laboratory	Ankistrodesmus sp. UCP001	2051484	36836	1.796
+SRR11742232	SRX8295665	this laboratory	Ankistrodesmus sp. UCP001	2400000	37953	1.581
+SRR1174704	SRX474937	independent	Ankistrodesmus falcatus	2053133	1024258	49.888
+SRR16849223	SRX13042245	independent	Monoraphidium griffithii (control)	1713905	954	0.056
+SRR5179119	SRX2495303	independent	Ankistrodesmus falcatus	1827155	28887	1.581

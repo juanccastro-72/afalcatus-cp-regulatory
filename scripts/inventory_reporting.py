@@ -16,7 +16,7 @@ LABELS={'PEP_paired_boxes':'PEP paired boxes','algal_TATAATAT':'Algal TATAATAT',
         'isolated_TATAAT':'Exact TATAAT','SD_like':'SD-like','downstream_hairpin':"3′ hairpins"}
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':9,'axes.titlesize':11,
     'axes.labelsize':9,'axes.spines.top':False,'axes.spines.right':False,
-    'svg.fonttype':'path','svg.hashsalt':'chloroplast-inventory-20261023',
+    'svg.fonttype':'none','svg.hashsalt':'chloroplast-inventory-20261023',
     'savefig.facecolor':'white','axes.titleweight':'bold'})
 
 

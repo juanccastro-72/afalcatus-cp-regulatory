@@ -1,0 +1,7 @@
+run_accession	experiment	source	scientific_name	read_count	note
+SRR11742232	SRX8295665	this_lab	Ankistrodesmus sp. UCP001	4000000	same strain focus (authors' laboratory)
+SRR11742231	SRX8295666	this_lab	Ankistrodesmus sp. UCP001	4000000	same strain focus (authors' laboratory)
+SRR5179119	SRX2495303	other_lab	Ankistrodesmus falcatus	4000000	A. falcatus, independent study
+SRR1174704	SRX474937	other_lab	Ankistrodesmus falcatus	12238492	A. falcatus, independent study
+SRR11729897	SRX8289087	other_lab	Ankistrodesmus falcatus	49830437	A. falcatus, independent study
+SRR16849223	SRX13042245	other_lab	Monoraphidium griffithi	37470443	Selenastraceae relative (cross-species control)
